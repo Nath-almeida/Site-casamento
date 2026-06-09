@@ -1,13 +1,39 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>site-casamento</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafaela & Rodrigo - Casamento</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <nav>
+      <a href="#" class="logo">R & R</a>
+      <ul>
+        <li><a href="#historia">Nossa História</a></li>
+        <li><a href="#local">O Evento</a></li>
+        <li><a href="#rsvp" class="bnt-rsvp">Confirmar Presença</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Rafaela & Rodrigo</h1>
+      <p class="subtitle">VAMOS NOS CASAR!</p>
+      <div class="date">15 de Maio de 2027</div>
+      
+      <div id="countdown" class="countdown"></div>
+    </div>
+  </section>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
 </html>
