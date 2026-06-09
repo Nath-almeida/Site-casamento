@@ -1,0 +1,21 @@
+/* ========= configurações globais ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html {
+  /* habilita a rolagem suave para menu */
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'montserrat', sans-serif;
+    background-color: #fbf9f6;
+    color: #33333333; 
+}
+
+/* Títulos */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
