@@ -131,35 +131,65 @@ h1, h2, h3 {
 }
 
 /* ========= Seção de contagem regressiva ========= */
-.countdown {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 25px;
+.placa-madeira {
+  background-color: #eaddcf;
+  border: 2px solid #c9b39e;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.countdown-box {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 12px 0;
-    border-radius: 6px;
-    min-width: 75px;
-    box-shadow: 0 4px  10px rgba(0, 0, 0, 0.15);
+.fonte-elegante {
+  font-family: 'Playfair Display', serif;
+  color: #5c4033;
+  margin: 10px 0;
 }
 
-.countdown-box span {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    display: block;
+.placa-numeros {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
 }
 
-.countdown-box p {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.85);
-    margin-top: 2px;
+.bloco-tempo {
+  background-color: #fdfbf7;
+  border: 1px solid #d4c4b7;
+  border-radius: 25px 25px 5px 5px;
+  padding: 20px 15px;
+  min-width: 70px;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.bloco-tempo::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #5c4033;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bloco-tempo span {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5c4033;
+  display: block;
+}
+
+.bloco-tempo p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #8b6d58;
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
