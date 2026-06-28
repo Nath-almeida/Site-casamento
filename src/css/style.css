@@ -130,66 +130,112 @@ h1, h2, h3 {
   margin-top: 30px;
 }
 
-/* ========= Seção de contagem regressiva ========= */
-.placa-madeira {
-  background-color: #eaddcf;
-  border: 2px solid #c9b39e;
-  border-radius: 20px;
-  padding: 30px;
-  max-width: 500px;
-  margin: 40px auto;
+/* ========= Seção de contagem regressiva (Estilo Calendário de Mesa) ========= */
+.secao-countdown {
+  background-color: #fbf9f6; /* Fundo claro idêntico ao corpo do site */
+  padding: 80px 20px;
   text-align: center;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.fonte-elegante {
+.titulo-countdown {
   font-family: 'Playfair Display', serif;
-  color: #5c4033;
-  margin: 10px 0;
+  color: #8c7863;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
+/* O suporte que segura o arco e as plaquinhas */
+.calendario-suporte {
+  max-width: 420px; /* Deixa o calendário compacto como um objeto de mesa */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* O arco metálico dourado onde as placas ficam penduradas */
 .placa-numeros {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin: 25px 0;
+  gap: 12px; /* Espaço entre as plaquinhas */
+  
+  /* Criando o cano de metal dourado nas laterais e no topo */
+  border: 3px solid #c5a059; 
+  border-bottom: none; /* Deixa o fundo aberto para assentar na madeira */
+  border-radius: 16px 16px 0 0; /* Arredonda apenas o topo do arco */
+  
+  padding: 35px 15px 10px 15px; /* Espaço interno para as placas respirarem */
+  background: transparent; /* Remove qualquer caixa de fundo */
 }
 
+/* As plaquinhas verticais brancas */
 .bloco-tempo {
-  background-color: #fdfbf7;
-  border: 1px solid #d4c4b7;
-  border-radius: 25px 25px 5px 5px;
-  padding: 20px 15px;
-  min-width: 70px;
+  background-color: #ffffff;
+  border: 1px solid #eae5e0;
+  border-radius: 6px;
+  
+  /* Proporção vertical: mais alta do que larga, igual ao da foto */
+  padding: 15px 5px;
+  min-width: 75px;
+  min-height: 100px; 
+  
   position: relative;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* As argolas douradas de metal que prendem as plaquinhas no arco */
 .bloco-tempo::before {
   content: '';
-  width: 6px;
-  height: 6px;
-  background-color: #5c4033;
-  border-radius: 50%;
+  width: 8px;
+  height: 20px;
+  border: 2px solid #c5a059; /* Cor dourada da argola */
+  border-radius: 10px; /* Faz a argola ficar oval */
+  
+  /* Posição estratégica: empurra a argola para fora da placa */
   position: absolute;
-  top: 8px;
+  top: -12px; 
   left: 50%;
   transform: translateX(-50%);
+  
+  /* Preenche com a cor de fundo da seção para dar o efeito de vazado */
+  background-color: #fbf9f6; 
+  z-index: 2;
 }
 
+/* Estilo dos números */
 .bloco-tempo span {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
-  color: #5c4033;
+  color: #333333;
   display: block;
+  line-height: 1;
 }
 
+/* Estilo das legendas (Dias, Horas, Min, Seg) */
 .bloco-tempo p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  color: #8b6d58;
-  margin-top: 5px;
+  color: #8c7863;
   letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+/* A barra de madeira que serve de base no chão */
+.base-madeira {
+  background-color: #decbba; /* Tom de madeira pinus/clara */
+  height: 16px;
+  border-radius: 4px;
+  border-bottom: 4px solid #bda895; /* Sombra própria da madeira para efeito 3D */
+  
+  /* Truque: faz a madeira ser um pouco mais larga que o arco metálico */
+  width: 104%;
+  margin-left: -2%; 
+  
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06);
 }

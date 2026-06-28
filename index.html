@@ -24,24 +24,31 @@
     </nav>
   </header>
 
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>Rafaela & Rodrigo</h1>
-      <p class="subtitle">VAMOS NOS CASAR!</p>
-      <div class="date">15 de Maio de 2027</div>
-      <div class="placa-madeira">
-        <div class="placa-topo">
-          <h3 class="fonte-elegante">Contagem Regressiva</h3>
-        </div>
-        
-        <div id="countdown" class="placa-numeros"></div>
-        
-        <div class="placa-base">
-          <p class="fonte-elegante">- PARA O GRANDE DIA -</p>
-        </div>
-      </div>
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Rafaela & Rodrigo</h1>
+    <p class="subtitle">VAMOS NOS CASAR!</p>
+    <div class="date">15 de Maio de 2027</div>
+  </div>
+</section>
+
+<!-- SEÇÃO DO CRONÔMETRO ESTILO CALENDÁRIO DE MESA -->
+<section class="secao-countdown">
+  <div class="container-countdown">
+    <h2 class="titulo-countdown">Contagem Regressiva</h2>
+    
+    <!-- O esqueleto completo do calendário -->
+    <div class="calendario-suporte">
+      
+      <!-- Onde o JavaScript vai injetar as plaquinhas -->
+      <div id="countdown" class="placa-numeros"></div>
+      
+      <!-- A base física de madeira -->
+      <div class="base-madeira"></div>
+      
     </div>
-  </section>
+  </div>
+</section>
 
   <script type="module" src="/src/js/main.js"></script>
 </body>
